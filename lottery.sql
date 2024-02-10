@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 10, 2024 at 12:05 PM
+-- Generation Time: Feb 10, 2024 at 12:08 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,6 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `three_item`
+--
+
+CREATE TABLE `three_item` (
+  `id` int(11) NOT NULL,
+  `num` varchar(255) NOT NULL,
+  `priceUpper` varchar(255) NOT NULL,
+  `priceLower` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `two_item`
 --
 
@@ -39,6 +52,12 @@ CREATE TABLE `two_item` (
 --
 
 --
+-- Indexes for table `three_item`
+--
+ALTER TABLE `three_item`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `two_item`
 --
 ALTER TABLE `two_item`
@@ -47,6 +66,12 @@ ALTER TABLE `two_item`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `three_item`
+--
+ALTER TABLE `three_item`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `two_item`
